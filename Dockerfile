@@ -25,3 +25,23 @@ RUN gem install -N nokogiri -- --use-system-libraries && \
   rm -rf /usr/lib/lib/ruby/gems/*/cache/* && \
   rm -rf ~/.gem
 
+
+RUN gem install byebug
+RUN gem install database_cleaner
+RUN gem install sqlite3
+RUN gem install codeclimate-test-reporter
+RUN gem install capybara
+RUN gem install poltergeist
+RUN gem install fuubar
+RUN gem install rspec-rails
+RUN gem install shoulda-matchers
+RUN gem install guard-rspec
+RUN gem install factory_girl_rails
+
+# pronto integration
+RUN apt-get update
+RUN apt-get install -y cmake
+RUN gem install pronto
+RUN gem install pronto-rubocop
+RUN gem install pronto-scss
+
