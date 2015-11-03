@@ -28,7 +28,6 @@ RUN gem install -N nokogiri -- --use-system-libraries && \
 
 RUN gem install byebug
 RUN gem install database_cleaner
-RUN gem install sqlite3
 RUN gem install codeclimate-test-reporter
 RUN gem install capybara
 RUN gem install poltergeist
