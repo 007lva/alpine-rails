@@ -2,9 +2,9 @@ FROM alpine:3.2
 
 MAINTAINER CenturyLink Labs <innovationslab@ctl.io>
 
-ENV BUILD_PACKAGES="curl-dev ruby-dev build-base git" \
-    DEV_PACKAGES="zlib-dev libxml2-dev libxslt-dev tzdata yaml-dev postgresql-dev" \
-    RUBY_PACKAGES="ruby ruby-io-console ruby-json yaml nodejs cmake bash libffi-dev" \
+ENV BUILD_PACKAGES="curl-dev ruby-dev build-base git cmake bash" \
+    DEV_PACKAGES="zlib-dev libxml2-dev libxslt-dev tzdata yaml-dev postgresql-dev libffi-dev" \
+    RUBY_PACKAGES="ruby ruby-io-console ruby-json yaml nodejs" \
     RAILS_VERSION="4.2.3"
 
 RUN \
